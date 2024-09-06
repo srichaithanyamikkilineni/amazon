@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Amazon Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+    background-color: #232F3E;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+        .logo {
+            color: #ff9900;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h2 {
+            color: #007185;
+        }
+        .product p {
+            color: #333;
+        }
+        footer {
+            background-color: #232f3e;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="cart">
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <h1>New Arrivals</h1>
+        
+        <div class="products-grid">
+            <div class="product">
+                <img src="tshirt.webp" alt="T-shirt">
+                <h2>Stylish T-shirt</h2>
+                <p>Brand: FashionCo</p>
+                <p>Price: ₹799</p>
+            </div>
+        
+            <div class="product">
+                <img src="jean.jpg" alt="Jeans">
+                <h2>Comfortable Jeans</h2>
+                <p>Brand: DenimLife</p>
+                <p>Price: ₹1599</p>
+            </div>
+        
+            <div class="product">
+                <img src="sneaker.webp" alt="Sneakers">
+                <h2>Cool Sneakers</h2>
+                <p>Brand: SportyFeet</p>
+                <p>Price: ₹2999</p>
+            </div>
+
+            <div class="product">
+                <img src="frocks.webp" alt="Dress">
+                <h2>Elegant Dress</h2>
+                <p>Brand: ChicStyles</p>
+                <p>Price: ₹1599</p>
+            </div>
+
+            <div class="product">
+                <img src="jacket.webp" alt="Jacket">
+                <h2>Leather Jacket</h2>
+                <p>Brand: UrbanEdge</p>
+                <p>Price: ₹2499</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Amazon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
